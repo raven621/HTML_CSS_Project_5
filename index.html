@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celo Bank</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/./assets/faviconapple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Embedded Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!--PC Header -->
+    <header class="header header-sticky">
+      <div class="container header-inner">
+        <!-- Tablet/Mobile menu -->
+        <label for="menu-checkbox" class="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              fill="currentColor"
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+        <!-- Logo -->
+        <a href="/">
+          <img src="./assets/icons/Logo.svg" alt="Celo Bank" class="logo" />
+        </a>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul id="pc-nav" class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#product" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#feature" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">Blog</a>
+            </li>
+            <li class="show-on-mobile menu-seperate">
+              <a href="#!">Sign in</a>
+            </li>
+            <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+          </ul>
+        </nav>
+        <!-- Header Action -->
+        <div class="header-cta">
+          <a href="#!" class="cta-login">Log in</a>
+          <button class="btn cta-signup">Sign up</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tablet/Mobile Header -->
+    <header class="mobile-header">
+      <!-- Checkbox to active menu -->
+      <input
+        class="menu-checkbox"
+        name=""
+        type="checkbox"
+        id="menu-checkbox"
+        hidden
+      />
+      <!-- Menu overlay -->
+      <label class="menu-overlay" for="menu-checkbox"></label>
+      <!-- Menu drawer -->
+      <div class="menu-drawer hide-on-pc">
+        <!-- Logo -->
+        <a href="#">
+          <img src="./assets/icons/Logo.svg" alt="Celo Bank" />
+        </a>
+        <!-- Navigation -->
+        <ul id="mobile-nav"></ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="row hero-inner">
+          <div class="col-lg-6 col-sm-12 col-12">
+            <section class="hero-content">
+              <p class="sub-heading">Digital Smart Wallet</p>
+              <h1 class="hero-heading">
+                Digital <span>Payment</span> For Everyone.
+              </h1>
+              <p class="text-lg-400 hero-desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <form action="" class="hero-email-form">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="hero-email-form-input"
+                />
+                <button type="submit" class="btn hero-cta-submit">
+                  Get Started
+                </button>
+              </form>
+              <strong class="text-sm-600 hero-reminder">
+                *We’ll respect the inbox and never share your email.
+              </strong>
+            </section>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="hero-media">
+              <img
+                src="./assets/images/mobile-screen.png"
+                alt="Digital Payment For Everyone."
+                class="hero-media-img"
+              />
+              <div class="hero-decor-left">
+                <div class="decor-wrap">
+                  <img src="./assets/icons/withdraw-icon.svg" alt="" />
+                  <span class="text-sm-600 decor-text">Deposite</span>
+                </div>
+                <span class="text-sm-400 decor-stat">$32000</span>
+              </div>
+              <div class="hero-decor-right">
+                <span class="decor-stat">0%</span>
+                <span class="text-md-400 decor-text">Interest</span>
+              </div>
+              <div class="hero-decor-bottom">
+                <img
+                  src="./assets/icons/sheild-dollar-icon.svg"
+                  alt=""
+                  class="decon-icon"
+                />
+                <div class="decor-wrap">
+                  <span class="text-sm-600 decor-stat">$1.310</span>
+                  <span class="decor-text">SECURED FUNDS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <!-- Guide -->
+        <section class="guide">
+          <div class="row guide-inner">
+            <div class="col-lg-5 guide-media">
+              <img
+                src="./assets/images/guide-img.png"
+                alt=""
+                class="guide-img"
+              />
+              <img
+                src="./assets/images/guide-img-bg.png"
+                alt=""
+                class="guide-img-bg"
+              />
+              <img
+                src="./assets/images/guide-decor-1.svg"
+                alt=""
+                class="guide-img-decor-top"
+              />
+              <div class="guide-img-decor-bottom">
+                <img src="./assets/images/guide-decor-2.svg" alt="" />
+                <div class="decor-content">
+                  <span class="decor-title">Congratulations</span>
+                  <span class="decor-desc">Your account activated</span>
+                </div>
+              </div>
+            </div>
+            <section class="col-lg-5 offset-lg-2 col-12 guide-info">
+              <p class="sub-heading">Digital Smart Wallet</p>
+              <h2 class="common-heading guide-heading">How It Works</h2>
+              <ol class="guide-list">
+                <li class="guide-item">
+                  <h3 class="guide-item-title">
+                    1. Open a High Interest Checking account
+                  </h3>
+                  <p class="text-md-400 guide-item-desc">
+                    Fund your bank account with a minimum balance of $100.
+                    Enroll in 3 minutes or less!
+                  </p>
+                </li>
+                <li class="guide-item">
+                  <h3 class="guide-item-title">
+                    2. 10 point-of-sale transactions each Month that are at
+                    least $10 each.
+                  </h3>
+                  <p class="text-md-400 guide-item-desc">
+                    Be sure to use your rewards checking account as often as
+                    possible in order to accue APYI
+                  </p>
+                </li>
+                <li class="guide-item">
+                  <h3 class="guide-item-title">3. Receive up to 5.50% APY</h3>
+                  <p class="text-md-400 guide-item-desc">
+                    The APY you earn will be based on your account balance and
+                    satisfying the transaction requirement.
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </div>
+        </section>
+        <!-- Feature -->
+        <section class="feature" id="feature">
+          <div class="row feature-inner">
+            <section class="col-lg-5 col-sm-12 col-12 feature-content">
+              <p class="sub-heading">Digital Smart Wallet</p>
+              <h2 class="common-heading feature-heading">
+                One Card For All Your Payments
+              </h2>
+              <p class="text-lg-400 feature-desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <ul class="feature-list">
+                <li class="text-lg-600 feature-item">Global Payments</li>
+                <li class="text-lg-600 feature-item">One-Click Purchase</li>
+                <li class="text-lg-600 feature-item">Friendly Price</li>
+              </ul>
+              <a href="#!" class="btn feature-cta">Get Started</a>
+            </section>
+            <div class="col-lg-6 offset-lg-1 feature-media">
+              <img
+                src="./assets/images/feature-card-img.png"
+                alt=" One Card For All Your Payments"
+                class="feature-media-img"
+              />
+              <div class="feature-decor-top">
+                <div class="content-left">
+                  <div class="content-left-img-wrap">
+                    <img
+                      src="./assets/icons/paper-plane-icon.svg"
+                      alt=""
+                      class="conten-left-img"
+                    />
+                  </div>
+                  <div class="content-left-info">
+                    <span class="content-left-title">Send Money</span>
+                    <span class="content-left-desc">Airbnb Payment</span>
+                  </div>
+                </div>
+                <div class="content-right">
+                  <span class="amount-money">- $600</span>
+                  <span class="date-spend">Sep 23</span>
+                </div>
+              </div>
+              <div class="feature-decor-bottom">
+                <img
+                  src="./assets/icons/hand-hold-money-icon.svg"
+                  alt=""
+                  class="decor-bottom-img"
+                />
+                <div class="decor-bottom-text">Income</div>
+                <div class="text-lg-600 decor-bottom-money">$1250</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Feature-1 -->
+        <section class="feature">
+          <div class="row feature-inner">
+            <div class="col-lg-6 col-12 feature-1-media">
+              <div class="col-lg-5 col-12 feature-1-img-wrap">
+                <img
+                  src="./assets/images/feature-1-img.png"
+                  alt=" Transfer and Deposite Your Money Anytime"
+                  class="feature-1-img"
+                />
+                <img
+                  src="./assets/images/feature-1-img-bg.png"
+                  alt=""
+                  class="feature-1-img-bg"
+                />
+                <div class="payment-method">
+                  <p class="text-lg-600 payment-desc">Choose payment method:</p>
+                  <div class="payment-list">
+                    <img
+                      src="./assets/images/master-card-logo-img.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                    <img
+                      src="./assets/images/maestro-logo-img.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                    <img
+                      src="./assets/images/bank-logo-img.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                    <img
+                      src="./assets/images/visa-logo-img.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                    <img
+                      src="./assets/images/paypal-logo-img.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                    <img
+                      src="./assets/images/plus.png"
+                      alt=""
+                      class="payment-item"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="feature-1-decor">
+                <img src="./assets/icons/money-icon.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-sm-12 feature-1-content">
+              <section class="feature-content">
+                <p class="sub-heading">Digital Smart Wallet</p>
+                <h2 class="common-heading feature-heading">
+                  Transfer and Deposite Your Money Anytime
+                </h2>
+                <p class="text-lg-400 feature-desc">
+                  We bring together eveything that’s required to build websites
+                  and apps that accept payments and send payouts globally. We
+                  are the best platform.
+                </p>
+                <ul class="feature-list">
+                  <li class="text-lg-600 feature-item">Powerfull App</li>
+                  <li class="text-lg-600 feature-item">
+                    Transparency And Speed
+                  </li>
+                  <li class="text-lg-600 feature-item">
+                    Multiple Use Capabilities
+                  </li>
+                </ul>
+                <a href="#!" class="btn feature-cta">Get Started</a>
+              </section>
+            </div>
+          </div>
+        </section>
+        <!-- Review -->
+        <section class="review">
+          <div class="row">
+            <div class="col">
+              <section class="review-top">
+                <p class="sub-heading">Our Testimonial</p>
+                <h2 class="common-heading review-top-heading">
+                  What Clients Says
+                </h2>
+                <p class="text-md-400 review-top-desc">
+                  Read what clients says about us and about our online banking
+                  services that may inspire you
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="row row-cols-lg-2 row-cols-sm-1 row-cols-1 review-list">
+            <div class="col">
+              <article class="review-item">
+                <blockquote class="review-wrap">
+                  <p class="testimonial-desc">
+                    Fantastic platform for online banking. The best online
+                    banking platform I have used. Payments, loans, and money
+                    transfers have never been so much easier before. I am very
+                    much happy about this great online bank.
+                  </p>
+                </blockquote>
+                <img
+                  src="./assets/images/client-1.png"
+                  alt="Alastair Cook"
+                  class="reviewer-picture"
+                  style="--bg-color: #4ab5e3"
+                />
+                <h3 class="reviewer-name">Alastair Cook</h3>
+                <h3 class="text-lg-400 reviewer-title">Businessmen</h3>
+              </article>
+            </div>
+            <div class="col">
+              <article class="review-item">
+                <blockquote class="review-wrap">
+                  <p class="testimonial-desc">
+                    Fantastic platform for online banking. The best online
+                    banking platform I have used. Payments, loans, and money
+                    transfers have never been so much easier before. I am very
+                    much happy about this great online bank.
+                  </p>
+                </blockquote>
+                <img
+                  src="./assets/images/client-2.png"
+                  alt="Alastair Foaks"
+                  class="reviewer-picture"
+                  style="--bg-color: #439f90"
+                />
+                <h3 class="reviewer-name">Alastair Foaks</h3>
+                <h3 class="text-lg-400 reviewer-title">Businessmen</h3>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col review-dots-wrap">
+              <div class="review-dot-list">
+                <span class="review-dot review-dot-active"></span>
+                <span class="review-dot"></span>
+                <span class="review-dot"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Blog -->
+        <section class="blog" id="blog">
+          <div class="row">
+            <div class="col">
+              <div class="blog-top">
+                <section class="blog-top-info">
+                  <p class="sub-heading">Our Blog</p>
+                  <h2 class="common-heading blog-top-heading">
+                    Get The Updates
+                  </h2>
+                  <p class="text-md-400 blog-top-desc">
+                    Read our blog for the regular updates about us and about our
+                    online banking services that may inspire you
+                  </p>
+                </section>
+                <a href="#!" class="btn blog-top-cta">Read All</a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-sm-2 row-cols-1 blog-list">
+            <div class="col">
+              <article class="blog-item">
+                <a href="#!">
+                  <img
+                    src="./assets/images/blog-img-1.png"
+                    alt=""
+                    class="blog-item-img"
+                  />
+                </a>
+                <div class="blog-item-info">
+                  <span class="text-sm-400 blog-item-date">July 03, 2022</span>
+                  <h3>
+                    <a href="#!" class="text-lg-600 blog-item-heading">
+                      Online bank is the best and secure way to save in the
+                      future...
+                    </a>
+                  </h3>
+                  <a href="#!" class="text-md-400 blog-item-cta">Read Blog</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="blog-item">
+                <a href="#!">
+                  <img
+                    src="./assets/images/blog-img-2.png"
+                    alt=""
+                    class="blog-item-img"
+                  />
+                </a>
+                <div class="blog-item-info">
+                  <span class="text-sm-400 blog-item-date">July 03, 2022</span>
+                  <h3>
+                    <a href="#!" class="text-lg-600 blog-item-heading">
+                      Why do you need to open a bank account in online..
+                    </a>
+                  </h3>
+                  <a href="#!" class="text-md-400 blog-item-cta">Read Blog</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="blog-item">
+                <a href="#!">
+                  <img
+                    src="./assets/images/blog-img-3.png"
+                    alt=""
+                    class="blog-item-img"
+                  />
+                </a>
+                <div class="blog-item-info">
+                  <span class="text-sm-400 blog-item-date">July 03, 2022</span>
+                  <h3>
+                    <a href="#!" class="text-lg-600 blog-item-heading">
+                      The benefits that we get from credit card at anytime...
+                    </a>
+                  </h3>
+                  <a href="#!" class="text-md-400 blog-item-cta">Read Blog</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="blog-item">
+                <a href="#!">
+                  <img
+                    src="./assets/images/blog-img-4.png"
+                    alt=""
+                    class="blog-item-img"
+                  />
+                </a>
+                <div class="blog-item-info">
+                  <span class="text-sm-400 blog-item-date">July 03, 2022</span>
+                  <h3>
+                    <a href="#!" class="text-lg-600 blog-item-heading">
+                      How to manage your money in online in this busy days...
+                    </a>
+                  </h3>
+                  <a href="#!" class="text-md-400 blog-item-cta">Read Blog</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="blog-cta-mobile">
+            <a href="#!" class="btn">Read All</a>
+          </div>
+        </section>
+        <!-- Install -->
+        <section class="install" id="product">
+          <div class="row">
+            <div class="col">
+              <section class="install-inner">
+                <p class="sub-heading install-sub-heading">Our App</p>
+                <h2 class="common-heading install-heading">
+                  Download the Apps
+                </h2>
+                <p class="text-md-400 install-desc">
+                  Download our mobile apps and get started today with a special
+                  online bank and move faster
+                </p>
+                <div class="install-cta">
+                  <a href="#!" class="install-link">
+                    <img src="./assets/images/ggplay-icon.svg" alt="" />
+                  </a>
+                  <a href="#!" class="install-link">
+                    <img src="./assets/images/appstore-icon.svg" alt="" />
+                  </a>
+                </div>
+                <img
+                  src="./assets/images/install-decor-icon.svg"
+                  alt=""
+                  class="install-decor decor-1"
+                />
+                <img
+                  src="./assets/images/install-decor-icon.svg"
+                  alt=""
+                  class="install-decor decor-2"
+                />
+                <img
+                  src="./assets/images/install-decor-icon.svg"
+                  alt=""
+                  class="install-decor decor-3"
+                />
+                <img
+                  src="./assets/images/install-decor-icon.svg"
+                  alt=""
+                  class="install-decor decor-4"
+                />
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!--Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-top">
+              <!-- Column 1 -->
+              <a href="/">
+                <img src="./assets/icons/Logo.svg" alt="Celo Bank" />
+              </a>
+              <!-- Column 2 -->
+              <div class="footer-top-column">
+                <h3 class="text-lg-600 footer-top-title">Sitemap</h3>
+                <ul class="footer-top-list">
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">Home</a>
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">Abouts</a>
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">Growers</a>
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">
+                      Merchants
+                    </a>
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Column 3 -->
+              <div class="footer-top-column">
+                <h3 class="text-lg-600 footer-top-title">Socials</h3>
+                <ul class="footer-top-list">
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="footer-top-item">
+                    <a href="#!" class="text-lg-400 footer-top-link">Twitter</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Column 4 -->
+              <div class="last-column">
+                <h3 class="text-lg-600 footer-top-title">Head Office</h3>
+                <p class="text-lg-400 footer-top-desc">
+                  Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                  Charlottesville, CA 45565
+                </p>
+                <h3 class="text-lg-600 footer-top-title">News letter</h3>
+                <form action="" class="footer-email-form">
+                  <input
+                    type="email"
+                    placeholder="Email address..."
+                    class="footer-email-input"
+                  />
+                  <button type="submit" class="btn footer-cta-submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="row footer-contact-block">
+              <div class="col">
+                <a href="#!" class="text-lg-400 contact-link">
+                  email@gmail.com
+                </a>
+                <a href="#!" class="text-lg-400 contact-link">
+                  (123) 456-7890
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="text-md-400 footer-copyright">
+                © 2020 Ligft Media All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const pcNav = document.querySelector("#pc-nav");
+    const mobileNav = document.querySelector("#mobile-nav");
+
+    // Copy from PC nav -> Mobile nav
+    mobileNav.innerHTML = pcNav.innerHTML;
+  </script>
+</html>
